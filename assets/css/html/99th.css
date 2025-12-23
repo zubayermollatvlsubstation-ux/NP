@@ -1,0 +1,100 @@
+
+
+li:nth-child(odd)::before {
+    content: "✓";
+    position: absolute;
+    left: 15px;
+    
+}
+li:nth-child(even)::before {
+    content: "✕"; 
+    color: red;
+    position: absolute;
+    left: 15px;
+}
+li:nth-child(odd) {
+  background-color: rgb(240, 246, 248);
+}
+
+li:nth-child(even) {
+  background-color: rgb(229, 236, 243);
+}
+.badge {
+    position: absolute;
+    top: 15px;
+    right: -30px;
+    background: #550ec8;
+    color: rgb(221, 27, 27);
+    padding: 5px 30px;
+    transform: rotate(45deg);
+    font-size: 12px;
+}
+button {
+    padding: 10px 30px;
+    border: 10px;;
+    border-radius: 50px;
+    color: rgb(237, 230, 230);
+    background-color: rgb(60, 60, 61);
+    font-weight: bold;
+    cursor: ew-resize;
+}
+
+
+.head {
+  position: center;
+  width: 200px;
+  top: 20px;
+  background: rgb(110, 91, 91); 
+}
+.box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.basic:hover{
+    background-color: rgb(238, 238, 246);
+    transform: rotate(15deg);
+    transition: 2s ease-in;
+    
+}
+
+.standard:hover {
+    width: 200px;
+  position: relative;
+  top: 20px;
+  left: 20px;
+  background: rgb(241, 242, 241);
+  transform: rotate(20deg);
+  transition: 2s ease-in-out;
+}
+.premium:hover {
+    width: 200px;
+  position: relative;
+  top: 20px;
+  left: 20px;
+  background: rgb(242, 242, 243);
+  transform: rotate(30deg);
+  transition-duration: 03s;
+}
+h1{
+    background: linear-gradient(to right);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 2px transparent;
+    color:blue;
+}
+  h1 {
+  width: 100px;
+  height: 30px;
+  background:lightblue;
+  position: relative;
+  animation: h1 5s 20s;
+  
+}
+
+@keyframes h1 {
+  from {top: 0px;}
+  to {top: 100px;}
+}

@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background: #fdfdfd; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: sans-serif;
+  font-style: oblique;
+  font-variant-emoji: emoji;
+}
+
+.gradient-text {
+  font-size: 20vw; 
+  font-weight: bold;
+  background: linear-gradient(320deg, #9c5fff, #fc2a05, #4304f1); 
+  background-size: 200% auto; 
+  color: transparent; 
+  -webkit-background-clip: text; 
+  background-clip: text; 
+  animation: ZUBAYER-move 3s ease infinite; 
+  transform: skewY(35deg);
+}
+
+@keyframes ZUBAYER-move {
+  0% {
+    background-position: 0% 50%; 
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+div{
+  width: 150px;
+  height: 80px;
+  background-color: none;
+  transform: skewY(20deg);
+}
+</style>
+</head>
+<body>
+
+<h1 class="gradient-text">ZUBAYER</h1>
+
+</body>
+</html>

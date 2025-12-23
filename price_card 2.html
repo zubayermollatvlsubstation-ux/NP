@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<style>
+    body {padding: 0;margin: 0;background-color: rgba(0, 0, 0, 0.247)}
+
+.container {width: 300px;box-shadow: 0 10px 30px rgba(0,0,0,0.1);overflow: hidden;transition: transform 0.3s ease;}
+.container1 {width: 300px;box-shadow: 0 10px 30px rgba(0,0,0,0.1);overflow: hidden;transition: transform 0.3s ease;
+                transform: scale(1.1);z-index: 2;box-shadow: 0 15px 40px rgba(0,0,0,0.2);}
+.container2 {width: 300px;box-shadow: 0 10px 30px rgba(0,0,0,0.1);overflow: hidden;transition: transform 0.3s ease;}
+
+    .card {background-color: white;display: flex;flex-direction: column;align-items: center;gap: 5px;border-radius: 15px;
+            padding-bottom: 15px;padding-right: 0;padding-left: 0;}
+
+    .price {display: flex;flex-direction: column;align-items: center;}
+
+    #d {font-size: 3rem;}
+
+    .header {background-color: #008a5e;color: white;text-align: center;width: 100%;border-top-right-radius: 15px;
+                border-top-left-radius: 15px;position: relative;}
+    .header1 {background-color: #063944;color: white;text-align: center;width: 100%;border-top-right-radius: 15px;
+                border-top-left-radius: 15px;position: relative;}
+    .header2 {background-color: #e67300;color: white;text-align: center;width: 100%;border-top-right-radius: 15px;
+                border-top-left-radius: 15px;position: relative;}
+
+    .header::after {content: "";position: absolute;bottom: -5px;left: 0;width: 100%;height: 18px;background-size: 18px 18px;
+                    background-image: radial-gradient(circle at 10px -5px, transparent 12px, white 13px);}
+    .header1::after {content: "";position: absolute;bottom: -5px;left: 0;width: 100%;height: 18px;background-size: 18px 18px;
+                    background-image: radial-gradient(circle at 10px -5px, transparent 12px, white 13px);}
+    .header2::after {content: "";position: absolute;bottom: -5px;left: 0;width: 100%;height: 18px;background-size: 18px 18px;
+                    background-image: radial-gradient(circle at 10px -5px, transparent 12px, white 13px);}
+
+.btn1 {background-color: #008a5e;color: white;padding: 10px;border: none;outline: none;border-radius: 10px;width: 40%;height: 40px;}
+.btn2 {background-color: #063944;color: white;padding: 10px;border: none;outline: none;border-radius: 10px;width: 40%;height: 40px;}
+.btn3 {background-color: #e67300;color: white;padding: 10px;border: none;outline: none;border-radius: 10px;width: 40%;height: 40px;}
+
+.btn1:hover {transform: scale(1.2);cursor: pointer;}
+.btn2:hover {transform: scale(1.2);cursor: pointer;}
+.btn3:hover {transform: scale(1.2);cursor: pointer;}
+   
+
+ul {list-style: none;padding: 0;}
+
+li {padding: 15px;}
+
+#thik {color: green;padding-right: 15px;}
+#cross {color: red;padding-right: 15px;}
+
+.grey {background-color: rgba(0, 0, 0, 0.055);}
+
+.pricecard {margin: 50px auto;max-width: 1000px;display: flex;gap: 20px;} /* main div container for sizing */
+</style>
+</head>
+<body>
+    <div class="pricecard">
+    <diV class="container">
+        <article class="card basic">
+            <div class="header"><h2>Basic</h2></div>
+            <div class="price"><span id="d">$2.99</span><span>per month</span></div>
+            <ul>
+                <li class="grey"><i class="fas fa-check" id="thik"></i> Sample Text Here</li>
+                <li class="excluded"><i class="fas fa-times" id="cross"></i> Other Text Title</li>
+                <li class="grey"><i class="fas fa-times" id="cross"></i> Text Space Goes Here</li>
+                <li class="excluded"><i class="fas fa-check" id="thik"></i> Description Space</li>
+                <li class="grey"><i class="fas fa-times" id="cross"></i> Sample Text Here</li>
+            </ul>
+            <button class="btn1">Select</button>
+        </article>
+    </diV>
+
+    <diV class="container1">
+        <article class="card basic">
+            <div class="header1"><h2>STANDARD</h2></div>
+            <div class="price"><span id="d">$5.99</span><span>per month</span></div>
+            <ul>
+                <li class="grey"><i class="fas fa-check" id="thik"></i> Sample Text Here</li>
+                <li class="included"><i class="fas fa-check" id="thik"></i> Other Text Title</li>
+                <li class="grey"><i class="fas fa-check" id="thik"></i> Text Space Goes Here</li>
+                <li class="excluded"><i class="fas fa-times" id="cross"></i> Description Space</li>
+                <li class="grey"><i class="fas fa-times" id="cross"></i> Sample Text Here</li>
+            </ul>
+            <button class="btn2">Select</button>
+        </article>
+    </diV>
+
+<diV class="container2">
+        <article class="card basic">
+            <div class="header2"><h2>PREMIUM</h2></div>
+            <div class="price"><span id="d">$9.99</span><span>per month</span></div>
+            <ul>
+                <li class="grey"><i class="fas fa-check" id="thik"></i> Sample Text Here</li>
+                <li class="included"><i class="fas fa-check" id="thik"></i> Other Text Title</li>
+                <li class="grey"><i class="fas fa-check" id="thik"></i> Text Space Goes Here</li>
+                <li class="included"><i class="fas fa-check" id="thik"></i> Description Space</li>
+                <li class="grey"><i class="fas fa-check" id="thik"></i> Sample Text Here</li>
+            </ul>
+            <button class="btn3">Select</button>
+        </article>
+    </diV>
+
+</div>
+</body>
+</html>
